@@ -1,17 +1,17 @@
 # kotoba-lang/kami-engine-io
 
-Zero-dep portable `.cljc` — restored from the legacy `kami-engine/kami-engine-io` Rust crate
-(deleted in the kotoba-lang Rust removal) as part of the **clj-wgsl migration** (ADR-2607010930,
-`com-junkawasaki/root`).
+> **Archived scaffold (ADR-2607102200 addendum 8–11).**  
+> clj-wgsl migration placeholder — **not** implementation SSoT.  
+> west group: `archived` (skipped by default `west update`).
 
-## Status
+## Where to go instead
 
-Scaffold only — the CLJC restoration is pending. This repo provides the home for the
-zero-dep portable `.cljc` contracts / data interpreters / EDN IR that replace the deleted
-Rust crate. Native execution (wgpu / wasmtime / wasmi) stays substrate.
+| need | package |
+|---|---|
+| Browser WebGPU executor | `kotoba-lang/webgpu` |
+| Game browser host | `kotoba-lang/host` |
+| Engine SDK | `kotoba-lang/kami-engine-sdk` |
+| App chrome (ex kami-ui-sdk) | `kotoba-lang/kami-engine-app-sdk` |
 
-## Develop
+Do not add new code here.
 
-```bash
-clojure -M:test
-```
